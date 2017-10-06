@@ -8,11 +8,15 @@ In that case we can improve the performance of view generation avoiding the load
 #### Install module
 1. Download the folder and place it in the drupal module folder
 2. Activate the module in the drupal admin section extend
+![Alt text](https://github.com/blasvicco/search_api_solr_pro/blob/master/img/install_module.png)
 3. Set the solr server backend to "Solr Pro"
+![Alt text](https://github.com/blasvicco/search_api_solr_pro/blob/master/img/enable_the_backend.png)
 4. Move the index to the new server and re index them
 5. Go to the view
 6. Open the advance query setting dialog
+![Alt text](https://github.com/blasvicco/search_api_solr_pro/blob/master/img/view_settings.png)
 7. Check the option "Skip entity load"
+![Alt text](https://github.com/blasvicco/search_api_solr_pro/blob/master/img/enable_option.png)
 8. Specified the indexed fields you want to use in the view (If the field is set as excluded for render then it will not be available in the view)
 
 
