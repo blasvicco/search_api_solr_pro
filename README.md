@@ -6,7 +6,7 @@ The well know module search_api_solr (https://www.drupal.org/project/search_api_
 In that case we can improve the performance of view generation avoiding the load of the entities.
 
 #### Install module
-1. Clone the repo in the drupal module folder
+1. Clone the repo into the drupal module folder
 2. Activate the module in the drupal admin section extend
 ![Alt text](https://github.com/blasvicco/search_api_solr_pro/blob/master/img/install_module.png)
 3. Set the solr server backend to "Solr Pro"
