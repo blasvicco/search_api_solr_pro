@@ -276,7 +276,7 @@ class SearchApiSolrBackendPro extends SearchApiSolrBackend {
         $add_fields = $query->getOption('search_api_add_fields');
         $solr_fields = $this->getSolrFieldNames($query->getIndex());
         $solarium_query->addFields(array_reduce($add_fields, function($added, $index) use ($solr_fields) {
-          if ($solr_fields[$index]) $added[] = $solr_fields[$index];
+          if (isset($solr_fields[$index])) $added[] = $solr_fields[$index];
           return $added;
         }, []));
       }
