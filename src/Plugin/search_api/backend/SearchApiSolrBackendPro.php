@@ -152,7 +152,7 @@ class SearchApiSolrBackendPro extends SearchApiSolrBackend {
     // Get field information.
     /** @var \Drupal\search_api\Entity\Index $index */
     $index = $query->getIndex();
-    $index_id = $this->getIndexId($index->id());
+    $index_id = $this->getIndexId($index);
     $field_names = $this->getSolrFieldNames($index);
 
     $connector = $this->getSolrConnector();
